@@ -1,0 +1,48 @@
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+.head1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+h2{
+    color: white;
+}
+div.bigbox{
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;}
+.box1{
+    background-color: #3e3d4f;
+    padding: 5% 10% 5% 10%;}
+.box2{
+    background-color: #3e3d4f;
+    padding: 5% 10% 5% 10%;}
+.box3{
+    background-color: #3e3d4f;
+    padding: 5% 10% 5% 10%;}
+.results{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    font-size: 150%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding: 1%;
+}
+img{
+    height: 40px;
+    padding: 15px 0px 10px 10px;
+}
+p{
+    padding: 10px 10px 10px 20px;
+    color: white;
+}
+.center{
+    display: flex;
+}
