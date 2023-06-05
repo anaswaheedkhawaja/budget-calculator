@@ -7,8 +7,39 @@
     display: flex;
     justify-content: space-evenly;
 }
-
-
+button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff0000, #9c2a00);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+button::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff6126, #ff9d2f);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+button:hover {
+    background: linear-gradient(45deg, #ff6126, #ff9d2f);
+}
+button:hover::before {
+    opacity: 1;
+}
 h2{
     color: white;
 }
@@ -48,3 +79,4 @@ p{
 .center{
     display: flex;
 }
+onclick{}

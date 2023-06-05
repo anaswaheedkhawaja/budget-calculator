@@ -7,6 +7,7 @@ function setBudget() {
   var budgetValue = parseFloat(prompt("Enter your monthly budget:"));
   if (!isNaN(budgetValue)) {
     budget = budgetValue;
+    showTotalBudget();
   }
 }
 
@@ -45,7 +46,6 @@ function displayExpenses() {
   });
 }
 
-
 function calculateBudget() {
   if (budget === 0) {
     alert("Please set your budget first.");
@@ -64,4 +64,9 @@ function calculateBudget() {
   } else {
     resultElement.textContent = "You have exceeded your budget by $" + Math.abs(remainingBudget).toFixed(2) + ".";
   }
+}
+
+function showTotalBudget() {
+  var totalBudgetElement = document.getElementById("totalBudget");
+  totalBudgetElement.textContent = ": $" + budget.toFixed(2);
 }
